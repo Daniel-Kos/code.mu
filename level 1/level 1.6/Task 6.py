@@ -1,0 +1,5 @@
+word = str(input())
+word_list = list(word)
+word_list.reverse()
+word = ''.join(word_list)
+print(word)
