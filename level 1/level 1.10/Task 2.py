@@ -1,0 +1,5 @@
+num = int(input())
+num = str(num)
+num_list = list(num)
+num_list.reverse()
+print(*num_list, sep = "")
