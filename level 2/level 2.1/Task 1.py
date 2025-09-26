@@ -12,8 +12,6 @@ while True:
 for n in word_list:
     if "https://" in n:
         deli_word.append(n)
-    else:
-        index = word_list.index(n)
-        word_list.pop(index)
 
 print(deli_word)
+
