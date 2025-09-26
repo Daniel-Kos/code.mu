@@ -1,4 +1,3 @@
-success = 0
 word_list = []
 deli_word = []
 search_element = "https://"
@@ -11,9 +10,10 @@ while True:
         word_list.append(word)
 
 for n in word_list:
-    if n != search_element:
-        word_list.remove(n)
+    if "https://" in n:
+        deli_word.append(n)
     else:
-        print(n)
+        index = word_list.index(n)
+        word_list.pop(index)
 
-print(word_list)
+print(deli_word)
