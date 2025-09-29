@@ -1,0 +1,5 @@
+word = str(input('Enter a word: '))
+set_word = set(word)
+set_word = list(set_word)
+set_word = ''.join(set_word)
+print(sorted(set_word))
